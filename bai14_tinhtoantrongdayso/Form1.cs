@@ -30,12 +30,30 @@ namespace bai14_tinhtoantrongdayso
             int chan = 0, le = 0;
             txtchan.Text = "";
             txtle.Text = "";
-
+            
+            while (nho <= lon)
+               
+            {
+                if (nho % 2 == 0) 
+                {
+                    chan += nho;
+                    
+                }
+                else
+                {
+                    le += lon;
+                    
+                }
+                nho++;
+                txtle.Text = le.ToString();
+                txtchan.Text = chan.ToString();
+                txttong.Text = (chan + le).ToString();
+            }
             
             
 
 
-            
+            /*
              for (int i = nho; i <= lon; i++)
              {
                  if (i % 2 == 0)
@@ -52,7 +70,7 @@ namespace bai14_tinhtoantrongdayso
              txtchan.Text = chan.ToString();
              txtle.Text = le.ToString();
              txttong.Text = (chan + le ).ToString();
-            
+            */
         }
            
     }
